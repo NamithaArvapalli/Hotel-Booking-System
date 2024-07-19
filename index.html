@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+body {
+ background-image: url("C:\Users\DELL\OneDrive\Desktop\html\Second\Hotel.jpeg");
+
+}
+
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <marquee class="marq"                
+                 direction="right"
+                 loop="">
+        <h2>Welcome to Our Hotel Harmony Retreat</h2></marquee>
+        <p>Enjoy a luxurious stay with us!</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room">
+            <h3>Single Room</h3>
+            <p>Price: $100 per night</p>
+        </div>
+        <div class="room">
+            <h3>Double Room</h3>
+            <p>Price: $150 per night</p>
+        </div>
+        <div class="room">
+            <h3>Suite</h3>
+            <p>Price: $300 per night</p>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book a Room</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="roomType">Room Type:</label>
+            <select id="roomType" name="roomType">
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+            <label for="checkIn">Check-in Date:</label>
+            <input type="date" id="checkIn" name="checkIn" required>
+            <label for="checkOut">Check-out Date:</label>
+            <input type="date" id="checkOut" name="checkOut" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: Harmonyinfo@hotel.com</p>
+        <p>Phone: +91 1234567890 </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
